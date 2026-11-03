@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-
 import { cart, cartLink, header, search, product, fixedToolbar } from '../page-objects/selectors';
 
 // ================================================================
