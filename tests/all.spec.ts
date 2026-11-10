@@ -1,6 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { cart, cartLink, fixedToolbar } from '../page-objects/selectors';
-
+import { cart, cartLink, search, product, fixedToolbar, favorites } from '../page-objects/selectors';
 // ================================================================
 // TC-01 · КОРЗИНА: иконка, счётчик, пустое состояние (ЭТАЛОН)
 // ----------------------------------------------------------------
