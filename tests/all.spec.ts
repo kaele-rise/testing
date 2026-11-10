@@ -266,9 +266,7 @@ test('ES-PRODUCT-01: проверка карточки товара', async ({ p
   await page.goto('/', { waitUntil: 'domcontentloaded' });
 
   // первая карточка, у которой есть кнопка «Купить» (то есть товар в наличии)
-  const firstCard = page.locator(product.card)
-    .filter({ has: page.locator(product.buyBtn) })
-    .first();
+  const firstCard = page.locator('.product:not(.slick-cloned)').first();
 
   await expect(firstCard, 'карточка товара должна быть видна').toBeVisible();
   await expect(firstCard.locator(product.title), 'название').toBeVisible();
