@@ -173,6 +173,7 @@ export const sorting = {
 export const product = {
   card:   '.product:not(.slick-cloned)', // карточка товара (без клонов слайдера)
   title:  '.product_name a',
+  titleLink: '.product_name a',
   price:  '.price',
   image:  '.image_wrap img',
   stock:  '.stock',
